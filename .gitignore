@@ -1,0 +1,66 @@
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+mvn.out
+dependency-reduced-pom.xml
+release.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/jvm.config
+.mvn/extensions.xml
+
+# Spring Boot
+*.log
+spring.log
+
+# Logs
+*.log
+logs/
+*.pid
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Configuration files
+.env
+
+# Directory-based project format
+.idea/
+
+# File-based project format
+*.iws
+*.iml
+*.ipr
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
