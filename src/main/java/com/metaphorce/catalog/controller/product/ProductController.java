@@ -5,15 +5,13 @@ import com.metaphorce.commonslib.entities.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/catalog/product")
 @Slf4j
 @Validated
+@CrossOrigin(origins = "*")
 public class ProductController {
 
     @Autowired
@@ -45,7 +43,7 @@ public class ProductController {
         productService.updateProduct(product);
     }
 
-    @RequestMapping("/create")
+    @PostMapping("/create")
     public void saveProduct(@RequestBody Product product) {
         productService.saveProduct(product);
     }
